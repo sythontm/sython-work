@@ -132,11 +132,19 @@ async def OwnerStart(event):
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 ☆ 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐬𝐲𝐭𝐡𝐨𝐧
 ☆ 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 : 2.0
-☆ 𝐩𝐢𝐧𝐠 : {ms}
-☆ 𝐝𝐚𝐭𝐞 :{m9zpi}
-☆ 𝐢𝐝 :{event.sender_id}
 ☆ 𝐬𝐨𝐮𝐫𝐜𝐞 𝐬𝐲𝐭𝐡𝐨𝐧 : @SAYTHONH
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍')
+
+
+@sython.on(events.NewMessage(outgoing=False, pattern='/scan'))
+async def OwnerStart(event):
+    sender = await event.get_sender()
+    if sender.id == ownerhson_id :
+        order = await event.reply('⌯ 𝒔𝒐𝒖𝒓𝒄𝒆 𝒔𝒚𝒕𝒉𝒐𝒏 ⌯
+Welcome developer')
+
+
+
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
