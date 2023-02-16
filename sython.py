@@ -130,8 +130,7 @@ ownerhson_id = 5159123009
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('⌯ 𝒔𝒐𝒖𝒓𝒄𝒆 𝒔𝒚𝒕𝒉𝒐𝒏 ⌯
-Welcome developer')
+        order = await event.reply('Welcome developer sython')
 
 
 
