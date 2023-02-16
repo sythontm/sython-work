@@ -131,14 +131,13 @@ ownerhson_id = 5159123009
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('**Welcome developer
-Sython Team**')
+        order = await event.reply('Welcome Developer The Source Is Running')
 
 @sython.on(events.NewMessage(outgoing=False, pattern='.فحص'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('**مرحبا بك ايها المطور حسام | sython**')
+        order = await event.reply('مرحبا بك ايها المطور حسام | sython')
 
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
