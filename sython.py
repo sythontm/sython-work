@@ -124,16 +124,6 @@ async def _(event):
     
     
 ownerhson_id = 5159123009
-@sython.on(events.NewMessage(outgoing=False, pattern='/scan'))
-async def OwnerStart(event):
-    sender = await event.get_sender()
-    if sender.id == ownerhson_id :
-        order = await event.reply('⌯ 𝒔𝒐𝒖𝒓𝒄𝒆 𝒔𝒚𝒕𝒉𝒐𝒏 ⌯
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
-☆ 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐬𝐲𝐭𝐡𝐨𝐧
-☆ 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 : 2.0
-☆ 𝐬𝐨𝐮𝐫𝐜𝐞 𝐬𝐲𝐭𝐡𝐨𝐧 : @SAYTHONH
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍')
 
 
 @sython.on(events.NewMessage(outgoing=False, pattern='/scan'))
